@@ -3,7 +3,7 @@
 // g++ $(pkg-config --libs --cflags opencv) -o camera_test main.cpp
 // run with:
 // ./camera_test
-
+// hello 
 #include <stdio.h>
 #include <opencv2/opencv.hpp>
 #include <opencv2/highgui.hpp>
@@ -13,7 +13,7 @@ using namespace std;
 
 int main(int argc,char ** argv)
 {
-    VideoCapture cap(0);
+     VideoCapture cap(0);
 
     if (!cap.isOpened()) {
         cerr << "ERROR: Unable to open the camera" << endl;
@@ -41,7 +41,8 @@ int main(int argc,char ** argv)
         cvtColor(frame, hsv, COLOR_BGR2HSV);
 
         // color range in HSV
-        Scalar lower_c(160, 50, 50);
+        int hello = 1; 
+        Scalar lower_c(160, 55, 55);
         Scalar upper_c(179, 255, 255);
 
         // Create mask
