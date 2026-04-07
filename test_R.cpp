@@ -3,7 +3,6 @@
 // g++ $(pkg-config --libs --cflags opencv) -o camera_test main.cpp
 // run with:
 // ./camera_test
-// hello 
 #include <stdio.h>
 #include <opencv2/opencv.hpp>
 #include <opencv2/highgui.hpp>
@@ -41,8 +40,7 @@ int main(int argc,char ** argv)
         cvtColor(frame, hsv, COLOR_BGR2HSV);
 
         // color range in HSV
-        int hello = 1; 
-        Scalar lower_c(160, 55, 55);
+        Scalar lower_c(160, 60, 60);
         Scalar upper_c(179, 255, 255);
 
         // Create mask
