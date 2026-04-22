@@ -70,7 +70,7 @@ int main(int argc,char ** argv)
 			// print
 			int64 now = getTickCount();
 			double timeSec = (now - lastPrint) / getTickFrequency();
-			if (timeSec > 0.01) {
+			if (timeSec > 0.1) {
 				cout <<"object"<<i
 				<< "/ x = "<<(int)x_frame
 				<< "/ y = "<<(int)y_frame
